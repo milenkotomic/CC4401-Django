@@ -1,0 +1,21 @@
+<h1>Detalles del auto</h1>
+<table>
+    <tr>
+        <th>Marca</th>
+        <td>{{ car.brand }}</td>
+    </tr>
+    <tr>
+        <th>Modelo</th>
+        <td>{{ car.model }}</td>
+    </tr>
+    <tr>
+        <th>Año</th>
+        <td>{{ car.year }}</td>
+    </tr>
+    <tr>
+        <th>Patente</th>
+        <td>{{ car.license_plate }}</td>
+    </tr>
+</table>
+<a href="{% url 'DCCar:reserve' car.id %}">Reservar</a>
+

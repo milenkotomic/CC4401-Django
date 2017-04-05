@@ -1,0 +1,15 @@
+<h1>Reservar auto patente {{ car.license_plate }}</h1>
+
+<form action="" method="post">
+{% csrf_token %}
+
+{{ form.car.as_hidden }}
+{{ form.start.errors }}
+<label>{{ form.start.label}}:</label>{{ form.start }}
+<br>
+{{ form.end.errors }}
+<label>{{ form.end.label}}:</label>{{ form.end }}
+<br>
+
+<input type="submit" value="Enviar" />
+</form>

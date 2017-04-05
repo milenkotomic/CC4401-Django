@@ -1,0 +1,10 @@
+<h1>Bienvenido a DCCar</h1>
+
+{% for car in cars %}
+    <h2>{{ car.brand }} - {{ car.model }}</h2>
+    <ul>
+        <li>{{ car.year }}</li>
+        <li>{{ car.license_plate }}</li>
+    </ul>
+    <a href="{% url 'DCCar:car_detail' car.id %}">Más detalles</a>
+{% endfor %}
